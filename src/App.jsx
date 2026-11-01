@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import Gallery from './components/Gallery';
 
+/**
+ * App Component
+ * Serves as the main container for the Photo Gallery application.
+ */
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-      <h1 className="text-3xl font-bold text-blue-600">Celebrare Photo Gallery</h1>
-  )
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans antialiased">
+      <main>
+        <Gallery />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
